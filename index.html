@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="css/classic.css">
+    <link rel="stylesheet" href="css/classic.date.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <!-- Sidebar Start -->
+    <aside class="sidebar">
+        <span class="close-sidebar-btn">
+            <i class="fas fa-times"></i>
+        </span>
+        <div class="side-inner">
+            <div class="profile mx-auto text-center">
+                <img src="assets/images/hline-hline.jpeg" alt="Hline Hline" class="img-fluid">
+                <h3 class="name">Wave White</h3>
+                <span class="email text-muted">hlaingwaiwailwin@gmail.com</span>
+                <!-- <a href="#" class="align-self-center btn btn-primary mt-2">Profile</a> -->
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li class="active"><a href="index.html"><i class="fas fa-home me-2"></i>Dashboard</a></li>
+                    <li><a href="profile.html"><i class="fas fa-user me-2"></i></i>Profile</a></li>
+                    <li><a href="#"><i class="fas fa-bell me-2"></i>Notifications <span
+                                class="badge bg-danger rounded-pill ms-3">3</span></a></li>
+                    <li><a href="categories.html"><i class="fas fa-th-large me-2"></i>Categories</a></li>
+                    <li><a href="statistics.html"><i class="fas fa-chart-line me-2"></i></i>Statistics</a></li>
+                    <li><a href="#"><i class="fas fa-sliders-h me-2"></i></i>Setting</a></li>
+                    <li><a href="signin.html"><i class="fas fa-sign-out-alt me-2"></i>Sign out</a></li>
+                </ul>
+
+                <ul class="mt-3 border-top border-color-muted">
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#share">
+                            <i class="fas fa-share-alt me-2"></i>Share Budget
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#rate">
+                            <i class="fas fa-star me-2"></i>Rate Budget
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- header start -->
+    <header>
+        <div class="container-fluid">
+            <nav class="">
+                <div class="row g-0">
+                    <div class="col-12 col-lg-12">
+                        <div class="main-nav d-flex">
+                            <div class="ms-2">
+                                <a href="#" type="button" class="menu-toggle d-lg-none">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                                <a href="index.html" class="navbar-brand ms-2">
+                                    Budget
+                                </a>
+                            </div>
+
+                            <ul class="nav py-1">
+                                <li class="nav-item my-auto">
+                                    <a href="#"
+                                        class="nav-link position-relative my-auto me-1 me-sm-2 me-lg-1 text-white">
+                                        <i class="fas fa-bell noti position-absolute top-50 left-50 translate-middle">
+                                        </i>
+                                        <span class="badge bg-danger rounded-pill position-absolute left-100">3</span>
+
+                                    </a>
+                                </li>
+                                <li class="nav-item d-none d-lg-inline-block">
+                                    <a href="#" class="nav-link">
+                                        <img src="assets/images/hline-hline.jpeg" alt="Hline Hline"
+                                            class="img-fluid profile-img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main section start -->
+    <main class="container-fluid">
+        <div class="row g-0">
+            <div class="col-lg-3 d-none d-lg-block">
+                <!-- Main Sidebar Start -->
+                <aside class="main-sidebar">
+                    <div class="side-inner">
+                        <div class="profile mx-auto text-center">
+                            <img src="assets/images/hline-hline.jpeg" alt="Hline Hline" class="img-fluid">
+                            <h3 class="name">Wave White</h3>
+                            <span class="email text-muted">hlaingwaiwailwin@gmail.com</span>
+                            <!-- <a href="#" class="align-self-center btn btn-primary mt-2">Profile</a> -->
+                        </div>
+
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="active"><a href="index.html"><i class="fas fa-home me-2"></i>Dashboard</a>
+                                </li>
+                                <li><a href="profile.html"><i class="fas fa-user me-2"></i></i>Profile</a></li>
+                                <li><a href="#"><i class="fas fa-bell me-2"></i>Notifications <span
+                                            class="badge bg-danger rounded-pill ms-3">3</span></a></li>
+                                <li><a href="categories.html"><i class="fas fa-th-large me-2"></i>Categories</a></li>
+                                <li><a href="statistics.html"><i class="fas fa-chart-line me-2"></i></i>Statistics</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-sliders-h me-2"></i></i>Setting</a></li>
+                                <li><a href="signin.html"><i class="fas fa-sign-out-alt me-2"></i>Sign out</a></li>
+                            </ul>
+
+                            <ul class="mt-3 border-top border-color-muted">
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#share">
+                                        <i class="fas fa-share-alt me-2"></i>Share Budget
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rate">
+                                        <i class="fas fa-star me-2"></i>Rate Budget
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!-- Main Sidebar End -->
+            </div>
+            <div class="col-md-12 col-lg-9">
+                <!-- Total balance Section Start -->
+                <section class="total-balance-section pt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-6">
+                            <div class="mb-3" style="background-color: unset;">
+                                <a class="btn bg-active text-white select-btn py-1 px-3 my-2">
+                                    <i class="fas fa-calendar-alt me-2"></i>
+                                    <span id="year-month">2021-July</span>
+                                </a>
+
+                                <div class="card-body position-relative">
+                                    <h3 class="h5">Total Balance</h3>
+                                    <span class="total-balance font-weight-bold text-white">
+                                        5,000 ks
+                                    </span>
+                                    <p class="minus">You spent 95.65&percnt; of your
+                                        income</p>
+                                    <div class="add-button position-absolute">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#choose"
+                                            class=" d-block w-100 h-100 position-relative">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Total balance Section End -->
+
+                <!-- Total Income, Expense Section Start -->
+                <section class="total-value-section">
+                    <div class="row d-flex justify-content-center align-items-stretched align-items-md-center">
+                        <div class="col-6 col-sm-4 col-xl-3">
+                            <div class="card mx-auto w-100 h-100 mb-3" style="background-color: unset;">
+                                <div class="bg-plus card-body position-relative">
+                                    <h3 class="card-title h4">Total Income</h3>
+                                    <span class="total-income-value font-weight-bold text-white">
+                                        115,000 ks
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-xl-3">
+                            <div class="card mx-auto w-100 h-100 mb-3" style="background-color: unset;">
+                                <div class="bg-minus card-body position-relative">
+                                    <h3 class="card-title h4">Total Expense</h3>
+                                    <span class="total-expense-value font-weight-bold text-white">
+                                        110,000 ks
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Total Income, Expense Section End -->
+
+                <!-- Daily statistics Section Start-->
+                <section class="daily-stat-section py-5">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row px-2">
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 30, 2021</span>
+                                        <span class="me-2">income: 60,000ks</span>
+                                        <span class="me-2">expense: 2,0000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon part-time fas fa-chalkboard-teacher me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Part-time Job <br> <span
+                                                        class="text-muted">Teaching</span></span>
+                                                <span class="plus my-auto">+60,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon home fas fa-home me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Home & Hostel Fee <br> <span
+                                                        class="text-muted"></span></span>
+                                                <span class="minus my-auto">-20,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            17.39&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 17, 2021</span>
+                                        <span class="me-2">income: 0s</span>
+                                        <span class="me-2">expense: 2,000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon bill fas fa-dollar-sign me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Bill <br> <span
+                                                        class="text-muted">telecom bill</span></span>
+                                                <span class="minus my-auto">-2,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            1.74&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 08, 2021</span>
+                                        <span class="me-2">income: 0s</span>
+                                        <span class="me-2">expense: 20,000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon food fas fa-utensils me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Food <br> <span
+                                                        class="text-muted"></span></span>
+                                                <span class="minus my-auto">-20,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            17.39&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 08, 2021</span>
+                                        <span class="me-2">income: 0s</span>
+                                        <span class="me-2">expense: 2,000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon bill fas fa-dollar-sign me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Bill <br> <span
+                                                        class="text-muted">telecom bill</span></span>
+                                                <span class="minus my-auto">-2,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            1.74&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 08, 2021</span>
+                                        <span class="me-2">income: 0s</span>
+                                        <span class="me-2">expense: 3,000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon bill fas fa-dollar-sign me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Bill <br> <span
+                                                        class="text-muted">telecom bill</span></span>
+                                                <span class="minus my-auto">-3,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            2.6&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 04, 2021</span>
+                                        <span class="me-2">income: 0</span>
+                                        <span class="me-2">expense: 60,000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon beauty fas fa-soap me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Beauty <br> <span
+                                                        class="text-muted"></span></span>
+                                                <span class="minus my-auto">-30,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon shopping fas fa-shopping-cart me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Shopping <br> <span
+                                                        class="text-muted"></span></span>
+                                                <span class="minus my-auto">-30,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            52.17&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 03, 2021</span>
+                                        <span class="me-2">income: 55,000ks</span>
+                                        <span class="me-2">expense: 0</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon pocket fab fa-get-pocket me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Pocket-money <br> <span
+                                                        class="text-muted">from Dad</span></span>
+                                                <span class="plus my-auto">+55,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            0&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-10 col-md-8 col-lg-10 col-xl-7">
+                                <div class="card daily-stat-card rounded mb-3">
+                                    <div class="card-header d-flex px-2">
+                                        <span class="flex-fill">Jul 01, 2021</span>
+                                        <span class="me-2">income: 0</span>
+                                        <span class="me-2">expense: 3,000ks</span>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="mb-0 px-0">
+                                            <li class="d-flex py-2 px-3">
+                                                <i class="cat-icon bill fas fa-dollar-sign me-3 my-auto"></i>
+                                                <span class="flex-fill my-auto me-3">Bill <br> <span
+                                                        class="text-muted">telecom bill</span></span>
+                                                <span class="minus my-auto">-3,000&nbsp;ks</span>
+                                                <!-- <span class="my-auto ms-2" style="width: 40px;height: 40px;">
+                                                    <i class="fas fa-times-circle"></i>
+                                                </span> -->
+                                                <form action="" class="my-auto ms-2"
+                                                    style="box-sizing: border-box;width: 40px;height: 40px;">
+                                                    <button style="outline: none;border: none;background-color: unset;"
+                                                        type="submit">
+                                                        <i class="fas fa-times-circle my-auto"></i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="mb-0">
+                                            2.6&percnt; of your monthly income was spent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Daily statistics Section End-->
+
+            </div>
+        </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- Footer Start -->
+    <footer class="py-4 text-center text-white">
+        Copyright © Kaung Myat Soe, 2021
+    </footer>
+    <!-- Footer ENd -->
+
+    <!-- Choose Income or Expense modal -->
+    <div class="modal" id="choose">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="py-3 ps-3">
+                    <h5 class="modal-title text-black text-center">
+                        Choose
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <a href="add-income.html" class="me-3">
+                        <i class="income fas fa-dollar-sign mb-1"></i>
+                        <p>Income</p>
+                    </a>
+                    <a href="add-expense.html" class="ms-3">
+                        <i class="expense fas fa-file-invoice-dollar mb-1"></i>
+                        <p>Expense</p>
+                    </a>
+                </div>
+                <div class="pt-2 pb-3 text-center">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share App modal -->
+    <div class="modal" id="share">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="py-3">
+                    <h5 class="modal-title text-black text-center">Share on</h5>
+                </div>
+                <div class="modal-body">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        <p class="text-black">facebook</p>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <p class="text-black">Messenger</p>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                        <p class="text-black">Instagram</p>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                        <p class="text-black">Twitter</p>
+                    </a>
+                </div>
+                <div class="pt-2 pb-3 text-center">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rate App modal -->
+    <div class="modal" id="rate">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="ps-3 py-3">
+                    <h5 class="modal-title text-black text-center">Enjoy Our App? Rate!</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-8">
+                            <div class="rating mb-1" style="text-align: left;">
+                                <i class="fa fa-star" id="star-1"></i>
+                                <i class="fa fa-star" id="star-2"></i>
+                                <i class="fa fa-star" id="star-3"></i>
+                                <i class="fa fa-star" id="star-4"></i>
+                                <i class="fa fa-star" id="star-5"></i>
+                            </div>
+                            <form action="#" class="review-form">
+                                <textarea name="" id="" cols="25" rows="3" placeholder="Your Review"></textarea>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center pt-2 pb-3">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Later
+                    </button>
+                    <button class="ms-3 btn btn-primary" data-bs-dismiss="modal">
+                        Submit Review
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

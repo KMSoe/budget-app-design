@@ -1,6 +1,6 @@
 // Income, Expense Multiple Line Graph
 const labels = [
-    "Start",
+    "",
     "Jan",
     "Feb",
     "Mar",
@@ -43,7 +43,7 @@ const total_inc_cat_pie_data = {
     labels: ["Salary", "Part-time Job", "Pocket-money"],
     datasets: [{
         labels: ["Salary", "Part-time Job", "Pocket-money"],
-        backgroundColor: [],
+        backgroundColor: ["#e33010", "#e7ab3c", "#3ce7e7"],
         data: [69.8, 22.8, 7.38], // 520000, 170000, 55000
         hoverOffset: 1
     }]
@@ -68,7 +68,7 @@ var total_inc_cat_pie_chart = new Chart(
 const total_exp_cat_pie_data = {
     labels: ["Home & Hostel Fee", "Food", "Drink", "Transportation", "Bill", "Beauty", "Health", "Shopping"],
     datasets: [{
-        backgroundColor: [],
+        backgroundColor: ["#0068b2", "#e7ab3c", "#b7a8a3", "#d2f50a", "#85bb65", "#866b8d", "#e41809", "#b63333"],
         data: [25.78, 26, 1, 5.89, 13.08, 7, 7.55, 13.81],
         hoverOffset: 2
     }]

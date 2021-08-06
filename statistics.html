@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App | Statistics</title>
+    <link rel="stylesheet" href="css/classic.css">
+    <link rel="stylesheet" href="css/classic.date.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <!-- Sidebar Start -->
+    <aside class="sidebar">
+        <span class="close-sidebar-btn">
+            <i class="fas fa-times"></i>
+        </span>
+        <div class="side-inner">
+            <div class="profile mx-auto text-center">
+                <img src="assets/images/hline-hline.jpeg" alt="Hline Hline" class="img-fluid">
+                <h3 class="name">Wave White</h3>
+                <span class="email text-muted">hlaingwaiwailwin@gmail.com</span>
+                <!-- <a href="#" class="align-self-center btn btn-primary mt-2">Profile</a> -->
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li class=""><a href="index.html"><i class="fas fa-home me-2"></i>Dashboard</a></li>
+                    <li><a href="profile.html"><i class="fas fa-user me-2"></i></i>Profile</a></li>
+                    <li><a href="#"><i class="fas fa-bell me-2"></i>Notifications <span
+                                class="badge bg-danger rounded-pill ms-3">3</span></a></li>
+                    <li><a href="categories.html"><i class="fas fa-th-large me-2"></i>Categories</a></li>
+                    <li class="active"><a href="statistics.html"><i
+                                class="fas fa-chart-line me-2"></i></i>Statistics</a></li>
+                    <li><a href="#"><i class="fas fa-sliders-h me-2"></i></i>Setting</a></li>
+                    <li><a href="signin.html"><i class="fas fa-sign-out-alt me-2"></i>Sign out</a></li>
+                </ul>
+
+                <ul class="mt-3 border-top border-color-muted">
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#share">
+                            <i class="fas fa-share-alt me-2"></i>Share Budget
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#rate">
+                            <i class="fas fa-star me-2"></i>Rate Budget
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- header start -->
+    <header>
+        <div class="container-fluid">
+            <nav class="">
+                <div class="row g-0">
+                    <div class="col-12 col-lg-12">
+                        <div class="main-nav d-flex">
+                            <div class="ms-2">
+                                <a href="#" type="button" class="menu-toggle d-lg-none">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                                <a href="index.html" class="navbar-brand ms-2">
+                                    Budget
+                                </a>
+                            </div>
+
+                            <ul class="nav py-1">
+                                <li class="nav-item my-auto">
+                                    <a href="#"
+                                        class="nav-link position-relative my-auto me-1 me-sm-2 me-lg-1 text-white">
+                                        <i class="fas fa-bell noti position-absolute top-50 left-50 translate-middle">
+                                        </i>
+                                        <span class="badge bg-danger rounded-pill position-absolute left-100">3</span>
+
+                                    </a>
+                                </li>
+                                <li class="nav-item d-none d-lg-inline-block">
+                                    <a href="#" class="nav-link">
+                                        <img src="assets/images/hline-hline.jpeg" alt="Hline Hline"
+                                            class="img-fluid profile-img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main section start -->
+    <main class="container-fluid">
+        <div class="row g-0">
+            <div class="col-lg-3 d-none d-lg-block">
+                <!-- Main Sidebar Start -->
+                <aside class="main-sidebar">
+                    <div class="side-inner">
+                        <div class="profile mx-auto text-center">
+                            <img src="assets/images/hline-hline.jpeg" alt="Hline Hline" class="img-fluid">
+                            <h3 class="name">Wave White</h3>
+                            <span class="email text-muted">hlaingwaiwailwin@gmail.com</span>
+                            <!-- <a href="#" class="align-self-center btn btn-primary mt-2">Profile</a> -->
+                        </div>
+
+                        <div class="nav-menu">
+                            <ul>
+                                <li class=""><a href="index.html"><i class="fas fa-home me-2"></i>Dashboard</a>
+                                </li>
+                                <li><a href="profile.html"><i class="fas fa-user me-2"></i></i>Profile</a></li>
+                                <li><a href="#"><i class="fas fa-bell me-2"></i>Notifications <span
+                                            class="badge bg-danger rounded-pill ms-3">3</span></a></li>
+                                <li><a href="categories.html"><i class="fas fa-th-large me-2"></i>Categories</a></li>
+                                <li class="active"><a href="statistics.html"><i
+                                            class="fas fa-chart-line me-2"></i>Statistics</a>
+                                </li>
+                                <li><a href="#"><i class="fas fa-sliders-h me-2"></i></i>Setting</a></li>
+                                <li><a href="signin.html"><i class="fas fa-sign-out-alt me-2"></i>Sign out</a></li>
+                            </ul>
+
+                            <ul class="mt-3 border-top border-color-muted">
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#share">
+                                        <i class="fas fa-share-alt me-2"></i>Share Budget
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#rate">
+                                        <i class="fas fa-star me-2"></i>Rate Budget
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!-- Main Sidebar End -->
+            </div>
+            <div class="col-md-12 col-lg-9">
+                <!-- Breadcrumb Section Start -->
+                <section class="breadcrumb-section row justify-content-center pt-4">
+                    <div class="col-md-12 col-lg-10">
+                        <ol class="breadcrumb px-2 py-3 mx-3 mb-3">
+                            <li class="breadcrumb-item"><a href="index.html" class=""><i
+                                        class="fas fa-home me-2"></i>Home</a></li>
+                            <li class="breadcrumb-item active"><a href="#" class=""><i
+                                        class="fas fa-chart-line me-2"></i>Statistics</a></li>
+                        </ol>
+                    </div>
+                </section>
+                <!-- Breadcrumb Section End -->
+
+                <!-- income-expense-yearly Section Start -->
+                <section class="income-expense-yearly-section py-3 px-1 px-lg-2">
+                    <div class="mb-4">
+                        <a href="#" class="select-btn bg-active text-white d-inline-block py-1 px-3 mb-4">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            2021
+                        </a>
+                        <h3 class="mb-4">Income Expense Line Graph</h3>
+                        <canvas id="income-expense-multi-line"></canvas>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-12 col-xl-6 mb-5">
+                            <h5 class="mb-4">Income Expense Table</h5>
+                            <table class="table table-bordered text-white text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Income</th>
+                                        <th>Expense</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-active">July</td>
+                                        <td class="plus">+115,000</td>
+                                        <td class="minus">-110,000</td>
+                                        <td class="plus">+5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">June</td>
+                                        <td class="plus">+30,000</td>
+                                        <td class="minus">-35,000</td>
+                                        <td class="minus">-5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">May</td>
+                                        <td class="plus">+30,000</td>
+                                        <td class="minus">-33,000</td>
+                                        <td class="minus">-3000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">April</td>
+                                        <td class="plus">+130,000</td>
+                                        <td class="minus">-65,000</td>
+                                        <td class="plus">+65,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">March</td>
+                                        <td class="plus">+130,000</td>
+                                        <td class="minus">-75,000</td>
+                                        <td class="plus">+55,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">February</td>
+                                        <td class="plus">+150,000</td>
+                                        <td class="minus">-121,000</td>
+                                        <td class="plus">+29,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">January</td>
+                                        <td class="plus">+160,000</td>
+                                        <td class="minus">-94,000</td>
+                                        <td class="plus">+66,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="font-weight-bold">
+                                    <tr>
+                                        <td>Total</td>
+                                        <td class="plus">+745,000</td>
+                                        <td class="minus">-533,000</td>
+                                        <td class="plus">+212,000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="col-12 col-xl-6 my-auto">
+                            <div class="total-income-expenses-graph-container row">
+                                <h5 class="text-center mb-4">Income Expense Progress Bar</h5>
+                                <div
+                                    class="col-md-12 col-xl-12 d-flex flex-column justify-content-center align-items-center">
+                                    <!-- <div class="income-expense-pie-container mx-auto ms-md-auto border-1 border-color-primary">
+                                        <div class="expense-amount"></div>
+                                    </div> -->
+                                    <div class="total-income-amount progress mb-4 mt-2" style="height: 25px">
+                                        <div class="total-expense-amount progress-bar bg-minus"></div>
+                                    </div>
+                                    <p class="text-center text-md-start text-xl-center">
+                                        <i class="fas fa-chart-line"></i>
+                                        71.54&percnt; of your income was spent.
+                                    </p>
+                                </div>
+                                <!-- <div class="col-md-6 col-xl-12 my-auto">
+                                     <p class="text-center text-md-start text-xl-center">
+                                        <i class="fas fa-chart-line"></i>
+                                        71.54&percnt; of your income was spent.
+                                    </p> 
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- income-expense-yearly Section Start -->
+
+                <!-- Income Expense Category graph- Section Start -->
+                <section class="income-expense-category-graph-section">
+                    <div class="row">
+                        <div class="col-12 my-3 ps-2">
+                            <h3 class="mb-4">Income Expense Category</h3>
+                            <a href="#" class="select-btn bg-active text-white d-inline-block py-1 px-3 mb-4">
+                                <i class="fas fa-calendar-alt me-2"></i>
+                                July 1, 2021 - July 31, 2021
+                            </a>
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="me-3">
+                                    <label for="select-type" class="text-white">By</label>
+                                    <select id="select-type" class="form-select text-white d-inline-block">
+                                        <option selected>Week</option>
+                                        <option>Month</option>
+                                        <option>Year</option>
+                                    </select>
+                                </span>
+                                <span class="text-white me-3">
+                                    or
+                                </span>
+                                <a href="#" class="select-btn bg-active text-white d-inline-block py-1 px-3 my-auto">
+                                    <i class="fas fa-calendar-alt me-2"></i>
+                                    Custom Select
+                                </a>
+                            </div>
+                            <!-- <div class="d-md-none mt-3 mb-4">
+                                <button class="income-category-pie-nav active btn text-white select-btn me-3 py-1 px-3">
+                                    <i class="fas fa-check me-2"></i>Income
+                                </button>
+                                <button class="expense-category-pie-nav btn text-white select-btn me-3 py-1 px-3">
+                                    <i class="fas fa-check me-2"></i>Expense
+                                </button>
+                            </div> -->
+                            <div class="swip-nav d-md-none d-flex justify-content-flex-start my-5">
+                                <a class="income-category-pie-nav active btn text-white select-btn me-3 py-1 px-3">
+                                    <i class="fas fa-check me-2"></i>Income
+                                </a>
+                                <a class="expense-category-pie-nav btn text-white select-btn me-3 py-1 px-3">
+                                    <i class="fas fa-check me-2"></i>Expense
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 income-category-pie-container">
+                            <h5 class="mb-4 text-center text-md-start">Income Category Pie Graph</h5>
+                            <div class="income-expense-pie-container position-relative mx-auto ms-md-auto">
+                                <canvas id="income-category-pie"></canvas>
+                            </div>
+                            <ul class="income-categories mx-auto mt-4">
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label salary fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Salary</span>
+                                    <span class="my-auto">69.8&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label part-time fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Part-time Teaching</span>
+                                    <span class="my-auto">22.8&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label pocket fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Pocket-money</span>
+                                    <span class="my-auto">7.38&percnt;</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 expense-category-pie-container">
+                            <h5 class="mb-4 text-center text-md-start">Expense Category Pie Graph</h5>
+                            <div class="income-expense-pie-container position-relative mx-auto ms-md-auto">
+                                <canvas id="expense-category-pie"></canvas>
+                            </div>
+                            <ul class="expense-categories mx-auto mt-4">
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label home fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Home & Hostel Fee</span>
+                                    <span class="my-auto">25.78&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label food fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Food</span>
+                                    <span class="my-auto">26&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label drink fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Drink</span>
+                                    <span class="my-auto">1&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label transportation fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Transportation</span>
+                                    <span class="my-auto">5.89&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label bill fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Bill</span>
+                                    <span class="my-auto">13.08&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label beauty fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Beauty</span>
+                                    <span class="my-auto">7&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label health fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Health</span>
+                                    <span class="my-auto">7.55&percnt;</span>
+                                </li>
+                                <li class="d-flex py-1 text-white">
+                                    <i class="cat-label shopping fas fa-square me-3 my-auto"></i>
+                                    <span class="flex-fill my-auto">Shopping</span>
+                                    <span class="my-auto">13.81&percnt;</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- Income Expense Category graph- Section Start -->
+
+            </div>
+        </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- Footer Start -->
+    <footer class="py-4 text-center text-white">
+        Copyright © Kaung Myat Soe, 2021
+    </footer>
+    <!-- Footer ENd -->
+
+    <!-- Choose Income or Expense modal -->
+    <div class="modal" id="choose">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="py-3 ps-3">
+                    <h5 class="modal-title text-black text-center">
+                        Choose
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="me-3">
+                        <i class="income fas fa-dollar-sign mb-1"></i>
+                        <p>Income</p>
+                    </a>
+                    <a href="#" class="ms-3">
+                        <i class="expense fas fa-file-invoice-dollar mb-1"></i>
+                        <p>Expense</p>
+                    </a>
+                </div>
+                <div class="pt-2 pb-3 text-center">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share App modal -->
+    <div class="modal" id="share">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="py-3">
+                    <h5 class="modal-title text-black text-center">Share on</h5>
+                </div>
+                <div class="modal-body">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        <p class="text-black">facebook</p>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <p class="text-black">Messenger</p>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                        <p class="text-black">Instagram</p>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                        <p class="text-black">Twitter</p>
+                    </a>
+                </div>
+                <div class="pt-2 pb-3 text-center">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rate App modal -->
+    <div class="modal" id="rate">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="ps-3 py-3">
+                    <h5 class="modal-title text-black text-center">Enjoy Our App? Rate!</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-8">
+                            <div class="rating mb-1" style="text-align: left;">
+                                <i class="fa fa-star" id="star-1"></i>
+                                <i class="fa fa-star" id="star-2"></i>
+                                <i class="fa fa-star" id="star-3"></i>
+                                <i class="fa fa-star" id="star-4"></i>
+                                <i class="fa fa-star" id="star-5"></i>
+                            </div>
+                            <form action="#" class="review-form">
+                                <textarea name="" id="" cols="25" rows="3" placeholder="Your Review"></textarea>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center pt-2 pb-3">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Later
+                    </button>
+                    <button class="ms-3 btn btn-primary" data-bs-dismiss="modal">
+                        Submit Review
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
